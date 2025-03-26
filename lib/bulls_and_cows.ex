@@ -1,18 +1,5 @@
 defmodule BullsAndCows do
-  @moduledoc """
-  Documentation for `BullsAndCows`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> BullsAndCows.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def score_guess(secret, guess) do
+    "0 Bulls, 0 Cows"
   end
 end

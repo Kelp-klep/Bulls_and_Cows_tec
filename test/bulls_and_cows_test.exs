@@ -25,4 +25,8 @@ defmodule BullsAndCowsTest do
     assert BullsAndCows.score_guess("1234", "5271") == "1 Bulls, 1 Cows"
     assert BullsAndCows.score_guess("2345", "5648") == "1 Bulls, 1 Cows"
   end
+  test "Scores a winning guess" do
+    assert BullsAndCows.score_guess("1234", "1234") == "You win"
+    assert BullsAndCows.score_guess("2345", "2345") == "You win"
+  end
 end
